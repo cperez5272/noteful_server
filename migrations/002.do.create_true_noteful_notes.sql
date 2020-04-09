@@ -3,5 +3,5 @@
     name TEXT NOT NULL,
     folder_id INTEGER,
     modified TIMESTAMP DEFAULT now() NOT NULL, 
-    content TEXT,
+    content TEXT
 );
