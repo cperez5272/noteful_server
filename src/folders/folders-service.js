@@ -14,12 +14,12 @@ const FoldersService = {
     getById(knex, id) {
       return knex.from('true_noteful_folders').select('*').where('id', id).first()
     },
-    deleteArticle(knex, id) {
+    deleteFolder(knex, id) {
       return knex('true_noteful_folders')
         .where({ id })
         .delete()
     },
-    updateArticle(knex, id, newFolderFields) {
+    updateFolder(knex, id, newFolderFields) {
       return knex('true_noteful_folders')
         .where({ id })
         .update(newFolderFields)
